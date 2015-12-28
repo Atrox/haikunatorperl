@@ -22,28 +22,28 @@ Haikunator is pretty simple.
 use Haikunator;
 
 # default usage
-haikunate() // => "wispy-dust-1337"
+haikunate() # => "wispy-dust-1337"
 
 # custom length (default=4)
-haikunate(:tokenLength(6)) // => "patient-king-887265"
+haikunate(:tokenLength(6)) # => "patient-king-887265"
 
 # use hex instead of numbers
-haikunate(:tokenHex(True)) // => "purple-breeze-98e1"
+haikunate(:tokenHex(True)) # => "purple-breeze-98e1"
 
 # use custom chars instead of numbers/hex
-haikunate(:tokenChars("HAIKUNATE")) // => "summer-atom-IHEA"
+haikunate(:tokenChars("HAIKUNATE")) # => "summer-atom-IHEA"
 
 # don't include a token
-haikunate(:tokenLength(0)) // => "cold-wildflower"
+haikunate(:tokenLength(0)) # => "cold-wildflower"
 
 # use a different delimiter
-haikunate(:delimiter(".")) // => "restless.sea.7976"
+haikunate(:delimiter(".")) # => "restless.sea.7976"
 
 # no token, space delimiter
-haikunate(:tokenLength(0), :delimiter(" ")) // => "delicate haze"
+haikunate(:tokenLength(0), :delimiter(" ")) # => "delicate haze"
 
 # no token, empty delimiter
-haikunate(:tokenLength(0), :delimiter("")) // => "billowingleaf"
+haikunate(:tokenLength(0), :delimiter("")) # => "billowingleaf"
 ```
 
 ## Options
