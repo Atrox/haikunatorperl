@@ -1,6 +1,6 @@
 # Haikunator for Perl 6
 
-[![Build Status](https://img.shields.io/travis/Atrox/haikunatorjs.svg?style=flat-square)](https://travis-ci.org/Atrox/haikunatorperl)
+[![Build Status](https://img.shields.io/travis/Atrox/haikunatorperl.svg?style=flat-square)](https://travis-ci.org/Atrox/haikunatorperl)
 
 Generate Heroku-like random names to use in your **perl 6** applications.
 
@@ -21,28 +21,28 @@ Haikunator is pretty simple.
 ```perl6
 use Haikunator;
 
-// default usage
+# default usage
 haikunate() // => "wispy-dust-1337"
 
-// custom length (default=4)
+# custom length (default=4)
 haikunate(:tokenLength(6)) // => "patient-king-887265"
 
-// use hex instead of numbers
+# use hex instead of numbers
 haikunate(:tokenHex(True)) // => "purple-breeze-98e1"
 
-// use custom chars instead of numbers/hex
+# use custom chars instead of numbers/hex
 haikunate(:tokenChars("HAIKUNATE")) // => "summer-atom-IHEA"
 
-// don't include a token
+# don't include a token
 haikunate(:tokenLength(0)) // => "cold-wildflower"
 
-// use a different delimiter
+# use a different delimiter
 haikunate(:delimiter(".")) // => "restless.sea.7976"
 
-// no token, space delimiter
+# no token, space delimiter
 haikunate(:tokenLength(0), :delimiter(" ")) // => "delicate haze"
 
-// no token, empty delimiter
+# no token, empty delimiter
 haikunate(:tokenLength(0), :delimiter("")) // => "billowingleaf"
 ```
 
